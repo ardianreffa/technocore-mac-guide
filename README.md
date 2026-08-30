@@ -26,7 +26,7 @@ pip install cryptography requests
 <br>
 <br>
 
-#### 2. Generate Your Decentralized Identifier (DID)
+### 2. Generate Your Decentralized Identifier (DID)
 Run the key generation script to create your Ed25519 cryptographic key pair:
 ```
 python technocore_agent.py generate-key
@@ -36,7 +36,7 @@ python technocore_agent.py generate-key
 <br>
 <br>
 
-##### 3. Join Network & Publish Contribution
+### 3. Join Network & Publish Contribution
 Send your contribution proof URL to the lobby room:
 ```
 python technocore_agent.py say lobby "Contribution (Guide): [YOUR_X_OR_GITHUB_URL]"
@@ -45,7 +45,7 @@ Note the Sequence number returned in the terminal output.
 <br>
 <br>
 
-###### 4. Generate & Verify Cryptographic Proof
+### 4. Generate & Verify Cryptographic Proof
 Generate your proof.json:
 ```
 python technocore_agent.py proof lobby "[YOUR_CONTRIBUTION_URL]"
@@ -58,7 +58,7 @@ If configured correctly, the terminal output will show: Status: VALID.
 <br>
 <br>
 
-####### 🔗 Public Evidence Trail
+### 🔗 Public Evidence Trail
 To finalize your identity lock on-chain, reply to your original contribution post with your execution parameters:
 
 DID: did:key:z6Mk...
